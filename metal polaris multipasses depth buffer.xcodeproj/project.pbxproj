@@ -7,20 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D74DEDB1E166ADE0047A560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DEDA1E166ADE0047A560 /* AppDelegate.m */; };
+		3D7330451E166C38000B3C6B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7330431E166C38000B3C6B /* Metal.framework */; };
+		3D7330461E166C38000B3C6B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7330441E166C38000B3C6B /* MetalKit.framework */; };
+		3D74DEDB1E166ADE0047A560 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DEDA1E166ADE0047A560 /* AppDelegate.mm */; };
 		3D74DEDE1E166ADE0047A560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DEDD1E166ADE0047A560 /* main.m */; };
 		3D74DEE01E166ADE0047A560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D74DEDF1E166ADE0047A560 /* Assets.xcassets */; };
 		3D74DEE31E166ADE0047A560 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D74DEE11E166ADE0047A560 /* MainMenu.xib */; };
+		3D74DEF01E166B290047A560 /* AAPLTransforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DEEC1E166B290047A560 /* AAPLTransforms.mm */; };
+		3D74DEF11E166B290047A560 /* MetalViewDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DEEE1E166B290047A560 /* MetalViewDelegate.mm */; };
+		3D74DEF21E166B290047A560 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DEEF1E166B290047A560 /* shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D7330431E166C38000B3C6B /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		3D7330441E166C38000B3C6B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		3D74DED61E166ADE0047A560 /* metal polaris multipasses depth buffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metal polaris multipasses depth buffer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D74DED91E166ADE0047A560 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3D74DEDA1E166ADE0047A560 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D74DEDA1E166ADE0047A560 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		3D74DEDD1E166ADE0047A560 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D74DEDF1E166ADE0047A560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D74DEE21E166ADE0047A560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3D74DEE41E166ADE0047A560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D74DEEA1E166B290047A560 /* AAPLSharedTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSharedTypes.h; sourceTree = "<group>"; };
+		3D74DEEB1E166B290047A560 /* AAPLTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLTransforms.h; sourceTree = "<group>"; };
+		3D74DEEC1E166B290047A560 /* AAPLTransforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLTransforms.mm; sourceTree = "<group>"; };
+		3D74DEED1E166B290047A560 /* MetalViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalViewDelegate.h; sourceTree = "<group>"; };
+		3D74DEEE1E166B290047A560 /* MetalViewDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalViewDelegate.mm; sourceTree = "<group>"; };
+		3D74DEEF1E166B290047A560 /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7330451E166C38000B3C6B /* Metal.framework in Frameworks */,
+				3D7330461E166C38000B3C6B /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D7330421E166C37000B3C6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D7330431E166C38000B3C6B /* Metal.framework */,
+				3D7330441E166C38000B3C6B /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D74DECD1E166ADE0047A560 = {
 			isa = PBXGroup;
 			children = (
 				3D74DED81E166ADE0047A560 /* metal polaris multipasses depth buffer */,
 				3D74DED71E166ADE0047A560 /* Products */,
+				3D7330421E166C37000B3C6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +79,13 @@
 			isa = PBXGroup;
 			children = (
 				3D74DED91E166ADE0047A560 /* AppDelegate.h */,
-				3D74DEDA1E166ADE0047A560 /* AppDelegate.m */,
+				3D74DEDA1E166ADE0047A560 /* AppDelegate.mm */,
+				3D74DEEA1E166B290047A560 /* AAPLSharedTypes.h */,
+				3D74DEEB1E166B290047A560 /* AAPLTransforms.h */,
+				3D74DEEC1E166B290047A560 /* AAPLTransforms.mm */,
+				3D74DEED1E166B290047A560 /* MetalViewDelegate.h */,
+				3D74DEEE1E166B290047A560 /* MetalViewDelegate.mm */,
+				3D74DEEF1E166B290047A560 /* shaders.metal */,
 				3D74DEDF1E166ADE0047A560 /* Assets.xcassets */,
 				3D74DEE11E166ADE0047A560 /* MainMenu.xib */,
 				3D74DEE41E166ADE0047A560 /* Info.plist */,
@@ -141,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D74DEF01E166B290047A560 /* AAPLTransforms.mm in Sources */,
+				3D74DEF21E166B290047A560 /* shaders.metal in Sources */,
+				3D74DEF11E166B290047A560 /* MetalViewDelegate.mm in Sources */,
 				3D74DEDE1E166ADE0047A560 /* main.m in Sources */,
-				3D74DEDB1E166ADE0047A560 /* AppDelegate.m in Sources */,
+				3D74DEDB1E166ADE0047A560 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +324,7 @@
 				3D74DEE91E166ADE0047A560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
